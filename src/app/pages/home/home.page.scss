@@ -1,0 +1,90 @@
+
+
+
+.p0{
+  padding: 0px;
+}
+
+.topcon{
+  height: 50%;
+  // Slider Style START 
+.custon-nav{
+  height: 48px;
+  width: 20px;
+  cursor: pointer;
+
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.prev-icon-custom{
+  background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png) no-repeat scroll 0px 0px;
+}
+.prev-icon-custom.disabled{
+  opacity: 0.4;
+  cursor: default;
+}
+.next-icon-custom{
+  background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png) no-repeat scroll -32px 0px;
+}
+.next-icon-custom.disabled{
+  opacity: 0.4;
+  cursor: default;
+}
+.slider-nav{
+  ion-icon{
+      height: 100%;
+  }
+}
+
+.slide-text{
+  position: absolute;
+  color: white;
+  top: 0px;
+}
+
+// Slider Style STOP
+
+.topdiv{
+  width: 100%;
+  padding: 0px 10px;
+}
+.col-1{
+  text-align: right;
+  ion-icon{
+    font-size: 24px;
+  }
+}
+.col-2{
+  .p1{
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+.bor1{
+  height: 1px;
+    background-color: white;
+    width: 35px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+}
+h1{
+  font-size: 46px;
+  font-weight: 600;
+}
+.p2{
+  font-size: 14px;
+}
+.col-3{
+  ion-button{
+    font-size: 10px;
+    padding: 0px;
+    width: 28%;
+    margin-top: 9%;
+    height: 32px;
+  }
+}
+}
+
