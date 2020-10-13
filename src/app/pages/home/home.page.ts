@@ -29,6 +29,12 @@ export class HomePage {
     }
   };
 
+  sliderConfig = {
+    slidesPerView: 1.6,
+    spaceBetween: 10,
+    centeredSlides: false
+  };
+
 
   constructor(
   ) {

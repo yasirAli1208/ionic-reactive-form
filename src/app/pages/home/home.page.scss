@@ -6,7 +6,7 @@
 }
 
 .topcon{
-  height: 50%;
+  height: 320px;
   // Slider Style START 
 .custon-nav{
   height: 48px;
@@ -88,3 +88,69 @@ h1{
 }
 }
 
+
+
+.main2{
+  margin-top: 10px;
+  padding: 0px 10px;
+  h4.margin0{
+    font-weight: 600;
+  }
+  p.text-right.margin0{
+    font-size: 12px;
+    color: grey;
+    margin-top: 10px;
+  }
+}
+
+.jlik{
+  height: 240px;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.pio{
+  font-weight: 800;
+  font-size: 14px;
+  font-family: system-ui;
+}
+.pio0{
+ font-weight: 700;
+  font-size: 12px;
+  font-family: system-ui;
+  margin-top: 2px;
+}
+.diviH{
+  position: absolute;
+  top: 9px;
+  right: 0px;
+  ion-icon{
+    margin-right: 10px;
+    font-size: 22px;
+    color: wheat;
+  }
+}
+.holdSale{
+padding: 0px 10px;
+  .imagediv{
+    overflow: hidden;
+    height: 189px;
+    border-radius: 10px;
+    position: absolute;
+    img{
+      height: 27vh;
+      border-radius: 10px;
+      
+    -webkit-filter: blur(2px);
+
+    }
+    
+  }
+  .classictxt{
+    position: absolute;
+    left: 20px;
+    p{
+      font-size: 16px;
+      color: white;
+    }
+  }
+}
