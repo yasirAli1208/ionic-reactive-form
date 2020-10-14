@@ -20,7 +20,7 @@ export class HomePage {
    slideOptsOne = {
     initialSlide: 0,
     slidesPerView: 1,
-    autoplay:false,pagination: {
+    autoplay:true,pagination: {
       el: '.swiper-pagination',
       clickable: true,
       renderBullet: function (index, className) {
@@ -35,6 +35,70 @@ export class HomePage {
     centeredSlides: false
   };
 
+  products = [
+
+    {
+      name:'Lady Bag',
+      image:'lady1',
+      price:'200'
+    },
+    {
+      name:'Lady Bag',
+      image:'lady2',
+      price:'200'
+    },
+    {
+      name:'Lady Bag',
+      image:'lady4',
+      price:'200'
+    },
+    {
+      name:'Lady Bag',
+      image:'lady1',
+      price:'200'
+    },
+    {
+      name:'Lady Bag',
+      image:'lady2',
+      price:'200'
+    },
+    {
+      name:'Lady Bag',
+      image:'lady4',
+      price:'200'
+    },
+    {
+      name:'Lady Bag',
+      image:'lady1',
+      price:'200'
+    },
+    {
+      name:'Lady Bag',
+      image:'lady2',
+      price:'200'
+    },
+    {
+      name:'Lady Bag',
+      image:'lady4',
+      price:'200'
+    },
+    {
+      name:'Lady Bag',
+      image:'lady1',
+      price:'200'
+    },
+    {
+      name:'Lady Bag',
+      image:'lady2',
+      price:'200'
+    },
+    {
+      name:'Lady Bag',
+      image:'lady4',
+      price:'200'
+    },
+
+  ]
 
   constructor(
   ) {
