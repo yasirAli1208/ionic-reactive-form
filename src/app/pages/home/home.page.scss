@@ -168,7 +168,7 @@ margin-top: -5px;
 .procard{
   background-color: white;
   border-radius: 10px;
-  box-shadow: 2px 2px 6px -2px black;
+  box-shadow: 2px 2px 12px -5px black;
   .imageca{
     height: 30vh;
     overflow: hidden;
@@ -197,5 +197,21 @@ margin-top: -5px;
       color: white;
       font-size: 20px;
     }
+  }
+}
+.fooDiv{
+  background-color: #cacaca;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px 15px 0px 0px;
+  padding: 0px 10px;
+  color: #736868;
+  p{
+    font-size: 12px;
+  }
+  ion-icon{
+    font-size: 20px;
   }
 }

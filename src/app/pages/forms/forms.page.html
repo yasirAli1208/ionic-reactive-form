@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>forms</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h1 class="ion-text-center">Contact Form</h1>
+
+  <form class="ion-padding" [formGroup]="testForm"  (ngSubmit)="submitForm()">
+
+    <ion-item>
+      <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+      <ion-label position="floating" placeholder="Name">First name</ion-label>
+      <ion-input formControlName="first_name"></ion-input>
+      <span class="error " *ngIf="isSubmitted && f.first_name.errors?.required">
+        Name is required.
+      </span>
+      <span class="error " *ngIf="isSubmitted && f.first_name.errors?.minlength">
+        Name should be min 2 chars long.
+      </span>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+      <ion-label position="floating" placeholder="Last name">Last name</ion-label>
+      <ion-input formControlName="last_name"></ion-input>
+      <span class="error " *ngIf="isSubmitted && f.last_name.errors?.required">
+        Last name is required.
+      </span>
+      <span class="error " *ngIf="isSubmitted && f.last_name.errors?.minlength">
+        Last name should be min 2 chars long.
+      </span>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="mail-outline" slot="start"></ion-icon>
+      <ion-label position="floating" placeholder="Phone" >Email</ion-label>
+      <ion-input formControlName="email" type="email"></ion-input>
+      <span class="error ion-padding" *ngIf="isSubmitted && f.email.errors?.required">
+        Email is required.
+      </span>
+      <span class="error ion-padding" *ngIf="isSubmitted && f.email.errors?.pattern">
+        Please provide valid email id.
+      </span>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="call-outline" slot="start"></ion-icon>
+      <ion-label position="floating" placeholder="Phone" >Phone</ion-label>
+      <ion-input formControlName="phone" type="number"></ion-input>
+      <span class="error ion-padding" *ngIf="isSubmitted && f.phone.errors?.required">
+        Mobile number is required.
+      </span>
+      <span class="error ion-padding" *ngIf="isSubmitted && f.phone.errors?.pattern">
+        Only numerical values allowed.
+      </span>
+    </ion-item>
+    
+    <ion-button type="submit" expand="block">Submit</ion-button>
+
+  </form>
+
+  <div class="ion-padding" *ngIf="printdata != ''">
+    <h4>{{printdata.first_name}}</h4>
+    <h4>{{printdata.last_name}}</h4>
+    <h4>{{printdata.email}}</h4>
+    <h4>{{printdata.phone}}</h4>
+  </div>
+
+</ion-content>
